@@ -6,7 +6,7 @@ https://themefisher.com/login?callbackUrl=/dashboard/downloads
 login: alexeymarkov2.1@gmail.com
 pswd: ppOKer74
 
-Spydea Nextjs - проект (доступен саппорт);
+Spydea Nextjs - проект (доступен саппорт, надо создать тикет);
 
 Примеры готовых сайтов:
 
