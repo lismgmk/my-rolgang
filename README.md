@@ -18,3 +18,6 @@ https://www.conveyery.ru/katalog/rolikovye-konvejery/
 
 http://rollgang.by/Rolgangi_rolikovye_konveyery_/Privodnye_rolgangi/
 
+Инструкция по Git:
+
+https://docs.google.com/document/d/1KLoOInWdamLa5iffeF604MoW3qnLehMi73RQhde8rVQ/edit
