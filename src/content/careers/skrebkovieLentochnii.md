@@ -1,9 +1,10 @@
 ---
-title: Lead Brand Designer
-description: Lorem ipsum dolor sit amet, cons dsec tetur adipi scing elit. Praesent sapien massa, convallis pelsle nte
-location: San Francisco
-type: fulltime
+title: "Конвейер ленточный скребковый"
+description: ""
+icon: /images/integration/skrebkovie-lentochnii-cat.jpg
+meta_title: ""
 draft: false
+
 ---
 
 #### What Is the role?

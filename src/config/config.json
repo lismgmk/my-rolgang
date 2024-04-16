@@ -38,13 +38,15 @@
 
   "navigation_buttons": [
     {
-      "enable": "true",
-      "label": "Login",
-      "link": "/login"
-    },
+      "enable": true,
+      "label": "Получить консультацию",
+      "link": "/contact"
+    }
+  ],
+  "navigation_buttons_homepage": [
     {
       "enable": true,
-      "label": "Get Started",
+      "label": "Узнать подробнее",
       "link": "/contact"
     }
   ],

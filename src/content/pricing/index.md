@@ -1,5 +1,5 @@
 ---
-title: "Choose the Plan That’s Right for You"
+title: "Модульные конвейеры"
 meta_title: "Choose the Plan That’s Right for You"
 description: "this is meta description"
 draft: false

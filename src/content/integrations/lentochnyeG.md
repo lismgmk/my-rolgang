@@ -1,7 +1,7 @@
 ---
-title: "Telegram"
-description: "We collect certain identifying personal data when you Sign up to our Service such as your name,"
-icon: /images/integration/telegram.svg
+title: "Г-образный ленточный конвейер"
+description: ""
+icon: /images/integration/konveyery-lentochnye-g-cat.jpg
 meta_title: ""
 draft: false
 ---

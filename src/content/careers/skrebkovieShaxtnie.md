@@ -1,9 +1,10 @@
 ---
-title: Head of Inbound Marketing
-description: Lorem ipsum dolor sit amet, cons dsec tetur adipi scing elit. Praesent sapien massa, convallis pelsle nte
-location: San Francisco
-type: fulltime
+title: "Скребковые конвейеры шахтные"
+description: ""
+icon: /images/integration/skrebkovie-shaxtnie-cat.jpg
+meta_title: ""
 draft: false
+
 ---
 
 #### What Is the role?

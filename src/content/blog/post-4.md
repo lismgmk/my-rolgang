@@ -1,10 +1,10 @@
 ---
-title: "The Real Product From The Buyers Improvements In Overflow Basis."
+title: "Объект №4"
 meta_title: ""
 date: 2022-04-04T05:00:00Z
-image: "/images/articles/4.jpg"
-author: "Daniel Mitchell"
-author_avatar: "/images/articles/4.jpg"
+image: "/images/articles/11.jpg"
+author: ""
+author_avatar: ""
 categories: ["Social", "Business"]
 tags: ["Development", "Language"]
 draft: false

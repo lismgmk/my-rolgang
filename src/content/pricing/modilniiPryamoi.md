@@ -1,7 +1,7 @@
 ---
-title: "Slack"
-description: "We collect certain identifying personal data when you Sign up to our Service such as your name,"
-icon: /images/integration/slack.svg
+title: "Конвейер горизонтальный модульный"
+description: ""
+icon: 
 meta_title: ""
 draft: false
 ---

@@ -1,9 +1,10 @@
 ---
-title: Sr. React Native Developer
-description: Lorem ipsum dolor sit amet, cons dsec tetur adipi scing elit. Praesent sapien massa, convallis pelsle nte
-location: San Francisco
-type: fulltime
+title: "Конвейер ленточный скребковый"
+description: ""
+icon: /images/integration/skrebkovie-cepnoi-cat.jpg
+meta_title: ""
 draft: false
+
 ---
 
 #### What Is the role?

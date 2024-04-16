@@ -1,8 +1,8 @@
 ---
-title: "Объект №2"
+title: "Объект №6"
 meta_title: ""
 date: 2022-04-04T05:00:00Z
-image: "/images/articles/12.jpg"
+image: "/images/articles/16.jpg"
 author: ""
 author_avatar: ""
 categories: ["Social", "Business"]

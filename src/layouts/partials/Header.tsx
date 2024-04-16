@@ -62,12 +62,13 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
       <header ref={header} className={`header z-50 ${backgroundColor}`}>
         <nav className="navbar container relative z-30">
           <Link href="/" className="navbar-brand">
-            <Image
+            {/* <Image
               width={158}
               height={36}
               src="/images/logo-dark.png"
               alt="spydea"
-            />
+            /> */}
+            ROLLGANG
           </Link>
           {/* <!-- End logo --> */}
 
@@ -135,7 +136,7 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
             </ul>
             {/* <!-- End Navbar Nav --> */}
             <div className="order-2 mx-auto mb-[0.75rem] flex flex-col items-center lg:mx-0 lg:mb-0 lg:ml-7 lg:flex-row">
-              <div className="flex flex-col justify-center gap-5 pt-4 text-center lg:ml-7 lg:flex-row lg:gap-7 lg:pt-0 lg:text-left">
+              <div className="flex flex-col justify-center gap-1 pt-4 text-center lg:ml-5 lg:flex-row lg:gap-1 lg:pt-0 lg:text-left">
                 {navigation_buttons.map((button, i) => {
                   return (
                     <React.Fragment key={i}>

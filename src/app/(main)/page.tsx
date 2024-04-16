@@ -1,7 +1,7 @@
 import BlogCard from "@/components/BlogCard";
 import TabContainer from "@/components/TabContainer";
 import Line from "@/components/line";
-import config from "@/config/config.json";
+// import config from "@/config/config.json";
 import DynamicIcon from "@/helpers/DynamicIcon";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -26,6 +26,7 @@ import BannerShape2 from "../../shapes/banner-s-2";
 import BlogShape1 from "../../shapes/blog-s-1";
 import FeatureShape1 from "../../shapes/feature-s-1";
 import FeatureShape2 from "../../shapes/feature-s-2";
+import config from "@/config/config.json";
 const { blog_folder } = config.settings;
 
 const Home = () => {
@@ -70,6 +71,7 @@ const Home = () => {
     blogs: Blogs;
   } = frontmatter;
   const { images, support, facility } = banner || {};
+  const { navigation_buttons_homepage } = config;
 
   return (
     <>
@@ -90,28 +92,43 @@ const Home = () => {
                 className="mb-6 text-lg"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
               ></p>
-              <form
+              {/* <form
                 data-aos="fade-up-sm"
                 data-aos-delay="200"
                 className="my-10 flex w-full max-w-[600px] flex-col justify-between rounded-md bg-white p-[6px] shadow-md sm:flex-row"
-              >
-                <input
+              > */}
+                {/* <input
                   type="search"
                   className="w-full border-0 bg-transparent p-4 pl-6 text-center text-base placeholder:text-neutral-400 focus:border-0 focus:ring-0 sm:text-left"
                   placeholder="Enter Your Email Address"
-                />
-                <button type="submit" className="btn btn-primary btn-md">
-                  Get A Quote
-                </button>
-              </form>
-              <span
+                /> */}
+                <div className="my-10 flex p-[6px] m-[25px]">
+                {navigation_buttons_homepage.map((button, i) => {
+                  return (
+                    <div key={i}>
+                      {button.enable && (
+                        <Link
+                          href={button.link}
+                          className={`btn ${
+                            i === 0 ? "btn-outline-primary" : "btn-primary"
+                          } w-[100px] min-[100px]:w-[100px] lg:w-auto`}
+                        >
+                          {button.label}
+                        </Link>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              {/* </form> */}
+              {/* <span
                 data-aos="fade-right"
                 data-aos-delay="250"
                 className="align-middle text-lg font-bold text-dark"
               >
                 {support.title}
-              </span>
-              <ul className="mt-2 flex flex-row gap-8 align-middle text-[28px] xs:ml-7 xs:mt-0 xs:inline-flex">
+              </span> */}
+              {/* <ul className="mt-2 flex flex-row gap-8 align-middle text-[28px] xs:ml-7 xs:mt-0 xs:inline-flex">
                 {support.list.map((item, i) => (
                   <li
                     key={i}
@@ -124,7 +141,7 @@ const Home = () => {
                     </a>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
               <div className="py-8">
                 <hr className="h-[1px] border-0 border-b border-border/50 bg-transparent" />
               </div>
@@ -200,7 +217,7 @@ const Home = () => {
       </section>
       {/* <!-- End Banner Section --> */}
 
-      <section className="md:section">
+      {/* <section className="md:section">
         <div className="shadow-default relative z-20 mx-3 max-w-[1440px] rounded-xl bg-white py-8 md:mx-6 md:py-16 lg:mx-auto">
           <div className="container">
             <div className="row justify-center">
@@ -225,7 +242,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- End Brands Section --> */}
 
       <section className="section features relative z-20 overflow-hidden after:-z-10">
@@ -395,10 +412,10 @@ const Home = () => {
       })}
       {/* <!-- End Feature Section --> */}
 
-      <Testimonials data={testimonial} />
+      {/* <Testimonials data={testimonial} /> */}
 
       <section className="section-md articles relative z-20 overflow-hidden after:-z-10">
-        <div className="container relative z-30">
+        {/* <div className="container relative z-30">
           <div className="row items-end justify-between pb-12">
             <div className="lg:col-8 xl:col-6">
               <span
@@ -430,10 +447,10 @@ const Home = () => {
               <BlogCard key={i} data={post} />
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* <!-- Start Bg Shape --> */}
-        <div
+        {/* <div
           data-aos="fade-left-sm"
           className="pointer-events-none absolute -left-24 bottom-0 hidden select-none lg:block"
         >
@@ -444,7 +461,7 @@ const Home = () => {
           className="pointer-events-none absolute right-0 top-52 hidden select-none lg:block"
         >
           <BlogShape1 className="text-quinary" />
-        </div>
+        </div> */}
         {/* <!-- End Bg Shape --> */}
         <Line className="line-bg absolute z-20" color="bg-line-sky" />
         {/* <!-- End background lines --> */}

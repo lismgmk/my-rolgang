@@ -1,8 +1,12 @@
 ---
-title: "Career At Spydea"
-meta_title: "career at spydea"
-description: "Nulla quis lorem ut libero male suada feugiat. Prae sent massa, convallis a pellent esque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Quisque velit nisi"
-image: /images/career.jpg
+title: "Скребковые конвейеры "
+meta_title: "a"
+description: "Скребковый конвейер — это транспортёр, в котором перемещение груза по трубе или жёлобу осуществляется за счёт скребков, установленных на закольцованной цепи или ленте.
+
+С помощью скребкового конвейера в основном перемещаются навалочные грузы, такие как песок, зерно, уголь или руда. Именно в угольной промышленности впервые появились скребковые транспортёры.
+
+Высокая производительность по перевалке сыпучих грузов позволила скребковым конвейерам получить широкое применение в строительной сфере, сельском хозяйстве и химической промышленности."
+icon: 
 
 #benefits
 benefits:

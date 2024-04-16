@@ -1,57 +1,57 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Главная",
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Blog",
+      "name": "Наши работы",
       "url": "/blog"
     },
     {
-      "name": "Pages",
+      "name": "Контакты",
+      "url": "/contact"
+    },
+    {
+      "name": "Наша продукция",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Elements",
+          "name": "Роликовые конвейеры",
           "url": "/elements"
         },
         {
-          "name": "Integration",
+          "name": "Ленточные конвейеры",
           "url": "/integration"
         },
         {
-          "name": "Careers",
+          "name": "Скребковые конвейеры",
           "url": "careers"
         },
         {
-          "name": "Pricing",
+          "name": "Модульные конвейеры",
           "url": "/pricing"
         },
         {
-          "name": "Authors",
+          "name": "Цепные конвейеры",
           "url": "/authors"
         },
         {
-          "name": "Contact",
+          "name": "Конвейеры для мусора",
           "url": "/contact"
         },
         {
-          "name": "Sign up",
-          "url": "/sign-up"
-        },
-        {
-          "name": "Terms & Conditions",
+          "name": "Пластинчатые конвейеры",
           "url": "/terms-conditions"
         },
         {
           "name": "404 Page",
           "url": "/404"
+        },
+        {
+          "name": "Sign up",
+          "url": "/sign-up"
         }
       ]
     }

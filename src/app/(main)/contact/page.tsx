@@ -28,20 +28,20 @@ const Contact = async () => {
                 className="shadow-default rounded-2xl bg-white px-8 py-10 sm:px-16 sm:py-14"
               >
                 <form method="post" className="row gy-4 text-dark">
-                  <div className="sm:col-6">
+                  <div className="col-12">
                     <label htmlFor="fname" className="form-label">
-                      First Name
+                      Ваше имя
                     </label>
                     <input
                       type="text"
                       className="form-input"
-                      placeholder="Your First Name"
+                      placeholder="Ваше имя"
                       id="fname"
                       name="fname"
                       required
                     />
                   </div>
-                  <div className="sm:col-6">
+                  {/* <div className="sm:col-6">
                     <label htmlFor="lname" className="form-label">
                       Last Name
                     </label>
@@ -53,21 +53,21 @@ const Contact = async () => {
                       name="lname"
                       required
                     />
-                  </div>
+                  </div> */}
                   <div className="col-12">
                     <label htmlFor="email" className="form-label">
-                      Email Address
+                      Ваш e-mail
                     </label>
                     <input
                       type="email"
                       className="form-input"
-                      placeholder="Your Email Address"
+                      placeholder="Ваш e-mail"
                       id="email"
                       required
                       name="email"
                     />
                   </div>
-                  <div className="col-12">
+                  {/* <div className="col-12">
                     <label htmlFor="purpose" className="form-label">
                       Reason/Purpose
                     </label>
@@ -80,15 +80,15 @@ const Contact = async () => {
                       <option value="1">Support Request</option>
                       <option value="2">Partnership Opportunity</option>
                     </select>
-                  </div>
+                  </div> */}
                   <div className="col-12">
                     <label htmlFor="message" className="form-label">
-                      Message
+                      Ваш вопрос
                     </label>
                     <textarea
                       name="message"
                       className="form-textarea"
-                      placeholder="Your Message"
+                      placeholder="Ваш вопрос"
                       id="message"
                       cols={30}
                       required
@@ -97,7 +97,7 @@ const Contact = async () => {
                   </div>
                   <div className="col-12 text-right">
                     <button type="submit" className="btn btn-primary">
-                      Submit Now
+                     Отправить 
                     </button>
                   </div>
                 </form>
@@ -141,6 +141,14 @@ const Contact = async () => {
                       href="tel:+1 234 567 8999"
                     >
                       {support.mobile}
+                    </a>
+                  </p>
+                  <p className="text-lg sm:text-xl">
+                    <a
+                      className="hover:underline hover:underline-offset-2"
+                      href="tel:+1 234 567 8999"
+                    >
+                      {support.text}
                     </a>
                   </p>
                 </div>

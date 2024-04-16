@@ -1,10 +1,10 @@
 ---
-title: "The Real Product From The Buyers Improvements In Overflow Basis."
+title: "Объект №1"
 meta_title: ""
 date: 2022-04-04T05:00:00Z
-image: "/images/articles/1.jpg"
-author: "benjamin"
-author_avatar: "/images/authors/1.jpg"
+image: "/images/articles/14.jpg"
+author: ""
+author_avatar: ""
 categories: ["Social", "Business"]
 tags: ["Development", "Language"]
 draft: false

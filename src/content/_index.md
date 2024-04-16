@@ -1,114 +1,115 @@
 ---
 # Banner
 banner:
-  title: "The smarter way to save documents"
-  content: "Pellen tesque in ipsum id orci porta dapibus. Sed port titor lectus nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed suscipit tortor eghet felis porttitor volutpat. Vivamus"
+  title: "Роликовые конвейеры и столы"
+  content: "Компания ООО АВ-Альянс является ведущим производителем металлоконструкций и оборудования для складов и логистических центров и парковочного оборудования России и Беларуси"
   images:
-    main: "/images/banner/banner-image.jpg"
-    left: "/images/banner/banner-image-part-1.jpg"
-    right: "/images/banner/banner-image-part-2.jpg"
-  support:
-    title: "Supported"
-    list:
-      - icon: "FaWindows"
-        link: "#?"
-      - icon: "FaDropbox"
-        link: "#?"
-      - icon: "FaHashtag"
-        link: "#"
-      - icon: "FaAndroid"
-        link: "#?"
+    main: "/images/banner/banner-image-part-2.jpg"
+    left: "/images/banner/banner-image-1.jpg"
+    right: "/images/banner/banner-image-part-1.jpg"
+  # support:
+  #   title: "Supported"
+    # list:
+    #   - icon: "FaWindows"
+    #     link: "#?"
+    #   - icon: "FaDropbox"
+    #     link: "#?"
+    #   - icon: "FaHashtag"
+    #     link: "#"
+    #   - icon: "FaAndroid"
+    #     link: "#?"
   facility:
-    - "Works Anywhere"
-    - "Get Rewarded"
-    - "No Hidden Fees"
+    - "Надежность"
+    - "Удобство в эксплуатации"
+    - "Гарантия качества"
 
 # Brands
-brands:
-  - source: "/images/brands/1.png"
-  - source: "/images/brands/2.png"
-  - source: "/images/brands/3.png"
-  - source: "/images/brands/4.png"
-  - source: "/images/brands/5.png"
-  - source: "/images/brands/6.png"
-  - source: "/images/brands/7.png"
-  - source: "/images/brands/1.png"
-  - source: "/images/brands/2.png"
-  - source: "/images/brands/3.png"
+# brands:
+#   - source: "/images/brands/1.png"
+#   - source: "/images/brands/2.png"
+#   - source: "/images/brands/3.png"
+#   - source: "/images/brands/4.png"
+#   - source: "/images/brands/5.png"
+#   - source: "/images/brands/6.png"
+#   - source: "/images/brands/7.png"
+#   - source: "/images/brands/1.png"
+#   - source: "/images/brands/2.png"
+#   - source: "/images/brands/3.png"
 
 # Features
 features:
-  title: "A Technology Approach"
-  subtitle: "WE ARE THE ULTIMATE"
-  description: "Pellen tesque in ipsum id orci porta dapibus. Sed port titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula"
+  title: ""
+  subtitle: ""
+  description: "Среди наших заказчиков крупные логистические центры, оптовые склады, торговые и производственные предприятия, владельцы паркингов, строительные и архитектурно-проектные организации Беларуси и России."
   button:
     label: "All Features"
     link: "#?"
     enable: true
   list:
-    - title: "Realtime function"
-      icon: "FaRegPaperPlane"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
-    - title: "Accurate comment!"
-      icon: "FaRegCopy"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
-    - title: "Plugins support"
+    - title: "Повышение качества"
       icon: "FaRegLightbulb"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
-    - title: "All Integrations"
-      icon: "FaRegObjectUngroup"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
+      description: "Производство только качественного оборудования для конвейерных линий"
+    - title: "Ускорение процессов"
+      icon: "FaRegLightbulb"
+      description: "Внедрение современных технологий и инноваций для каждой отрасли"
+    - title: "Развитие кооперации"
+      icon: "FaRegLightbulb"
+      description: "Сотрудничество с различными партнёрами для организации комплексного подхода"
+    - title: "Сокращение затрат"
+      icon: "FaRegLightbulb"
+      description: "Экономия средств и оптимизация решений при интеграции оборудования"
 
 # Process
 process:
-  title: "Don't Take Our Word For It"
-  subtitle: "EXPERIENCE SPEAKS"
-  description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt."
+  title: "ЭТАПЫ СОТРУДНИЧЕСТВА"
+  subtitle: ""
+  description: "Плотное взаимодействие с каждым клиентом на любом этапе производства конвейерного оборудования позволяет нам добиться максимального удовлетворения всех потребностей и решения задач заказчика."
   list:
-    - title: "Features You will Need"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
-      image: "/images/tab-contents/feature-tab-content-1.jpg"
-    - title: "Increase Your Sales"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
+    - title: "Проектирование"
+      description: "Команда лучших инженер-конструкторов готова реализовывать амбициозные проекты"
+      image: "/images/tab-contents/feature-tab-content-1-1.jpg"
+    - title: "Изготовление"
+      description: "На собственной производственной базе специалисты создадут эталон конвейерного производства"
       image: "/images/tab-contents/feature-tab-content-2.jpg"
-    - title: "Choose Right Plan"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
+    - title: "Интеграция"
+      description: "Бригада монтажников доставят, установят и настроят работу конвейера."
       image: "/images/tab-contents/feature-tab-content-3.jpg"
+   
 
 # Projects
 projects:
-  title: "A Few Numbers We are Proud"
-  subtitle: "ACHIEVING EXCELLENCE"
-  description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum"
+  title: "ООО АВ-Альянс"
+  subtitle: ""
+  description: "Подберём оптимальное решение для вашего бизнеса, основанное на большом опыте работы"
   features:
-    - count: 94
-      desc: Client Retention
+    - count: 99
+      desc: Довольных клиентов
       unit: "%"
-    - count: 70
-      desc: Emails Per Month
-      unit: "M+"
-    - count: 10
-      desc: Monthly Campaigns
-      unit: "K+"
+    - count: 5000
+      desc: Выполненых заказов
+      unit: ""
+    # - count: 10
+    #   desc: Monthly Campaigns
+    #   unit: "K+"
 
 # Feature Post
 feature_post:
-  - title: "Take Your Marketing to the Next Level."
-    subtitle: "INNOVATIVE STRATEGIES"
-    description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
-    image: "/images/feature-1.png"
+  - title: "Роликовые конвейеры"
+    subtitle: ""
+    description: "Представляют собой конструкцию, в которую вмонтированы ролики, способные вращаться на жёстко закреплённой оси. Количество и материал ролика непосредственно влияют на способность перемещения различных грузов. С помощью роликовый конвейеров можно перемещать сыпучие и несыпучие грузы, при условии упаковки их в жёсткий каркас, паллеты, поддоны, ящики, короба или контейнеры. Также роликовые конвейеры способны перемещать тяжёлые или длинномерные грузы. На основе роликового конвейера можно автоматизировать отдельный участок любого производства, или создать разветвлённую конвейерную систему для организации сортировки на складе или в логистическом центре."
+    image: "/images/feature-1-1.png"
 
-  - title: "Choose the Right Plan for Your Team"
-    subtitle: "COLLABORATIVE SOLUTIONS"
-    description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
-    image: "/images/feature-2.png"
+  - title: "Ленточный конвейер"
+    subtitle: ""
+    description: "Считается одним из основных видов конвейеров, и представляет собой конструкцию транспортёра, в которой функции перемещения различных грузов и материалов выполняются лентой, мотор-редуктором и различными роликами с барабаном. Транспортировочная трасса ленточного конвейера в виде ленты может быть полимерной, пластиковой или резинотканевой, что позволяет применять ленточный транспортёр в различных отраслях промышленности и сферах жизнедеятельности человека. Ленточный транспортёр способен перемещать как штучные, так и сыпучие грузы на любое расстояние, при этом использование ленты с гофробортами или шевронами позволяет осуществлять транспортировку в разных плоскостях с углом до 60 градусов."
+    image: "/images/feature-2-1.png"
 
 #Blog
-blogs:
-  title: "Take a Look at the Latest Articles from Our Blog"
-  subtitle: "Latest Articles"
-  button:
-    label: "Browse All Articles"
-    link: "blog/"
-    enable: true
+# blogs:
+#   title: "Take a Look at the Latest Articles from Our Blog"
+#   subtitle: "Latest Articles"
+#   button:
+#     label: "Browse All Articles"
+#     link: "blog/"
+#     enable: true
 ---

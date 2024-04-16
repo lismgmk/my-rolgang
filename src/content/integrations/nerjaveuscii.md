@@ -1,7 +1,7 @@
 ---
-title: "Figma"
-description: "We collect certain identifying personal data when you Sign up to our Service such as your name,"
-icon: /images/integration/figma.svg
+title: "Ленточные конвейеры из нержавеющей стали"
+description: ""
+icon: /images/integration/konveer-nerjaveuscii-cat.jpg
 meta_title: ""
 draft: false
 ---

@@ -9,6 +9,8 @@ import AboutShape1 from "@/shapes/about-s-1";
 import AboutShape2 from "@/shapes/about-s-2";
 import { OpenPosition, Testimonial } from "@/types";
 import Image from "next/image";
+import Link from "next/link";
+import { slugify } from "@/lib/utils/textConverter";
 
 interface CareersPage {
   frontmatter: {
@@ -57,36 +59,62 @@ const Career = () => {
 
       <PageHeader title={title} description={description} />
 
-      <section className="section relative z-20 mt-[-26rem] overflow-hidden pb-0">
-        <div className="container relative">
-          <div className="row">
-            <div className="col-11 mx-auto">
-              <div
-                data-aos="fade-up-sm"
-                className="relative z-10 rounded-[15px] border-[6px] border-white bg-white sm:border-[12px]"
-              >
-                <Image
-                  className="w-full rounded-[15px] object-cover"
-                  src={image}
-                  width={1140}
-                  height={600}
-                  alt="career"
-                />
-              </div>
-            </div>
+      <section className="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem]">
+        <div className="container relative z-20">
+          <div className="row gy-4">
+            {removeDrafts.map((draft, i) => {
+              return (
+                <div
+                  key={i}
+                  data-aos="fade-up-sm"
+                  className="md:col-6 lg:col-4"
+                >
+                  <div className="shadow-default overflow-hidden rounded-xl bg-white p-7">
+                    <div className="mb-6 flex flex-wrap items-center justify-between gap-y-4">
+                      <Image
+                        width={300}
+                        height={80}
+                        className="rounded-xl"
+                        src={draft.frontmatter.icon}
+                        alt="icon"
+                      />
+                    </div>
+                    <h3 className="mb-4 font-primary text-xl font-semibold text-dark sm:text-1.9xl">
+                      <Link
+                        href={`/integration/${slugify(
+                          draft.frontmatter.title,
+                        )}`}
+                      >
+                        {draft.frontmatter.title}
+                      </Link>
+                    </h3>
+                    <p>{draft.frontmatter.description}</p>
+                      <a href="#" className="btn btn-outline-primary">
+                        {/* <DynamicIcon
+                          className="mr-3 inline-block h-5 w-5 fill-current"
+                          icon="FaPlus"
+                        /> */}
+                        Получить консультацию
+                      </a>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-          {/* <!-- Start Shape background --> */}
-          <div className="pointer-events-none absolute left-0 top-1/2 -z-10 hidden -translate-y-1/2 select-none md:block lg:left-[-4%]">
-            <AboutShape1 className="w-full text-tertiary" />
-          </div>
-          <div className="pointer-events-none absolute right-0 top-1/2 -z-10 hidden -translate-y-1/2 scale-75 select-none md:block lg:right-[-5%]">
-            <AboutShape2 className="text-quaternary" />
-          </div>
+
+          {/* <!-- Start Bg Shape --> */}
+          {/* <div className="pointer-events-none absolute left-[-4%] top-[30%] -z-10 select-none">
+            <IntegrationShape1 className="text-tertiary" />
+          </div> */}
+          {/* <div className="pointer-events-none absolute bottom-[30%] right-[-5%] -z-10 select-none">
+            <IntegrationShape2 className="text-quaternary" />
+          </div> */}
+          {/* <!-- End Bg Shape --> */}
         </div>
       </section>
 
       {/* <!-- Benefits --> */}
-      <section className="section relative z-20 overflow-hidden">
+      {/* <section className="section relative z-20 overflow-hidden">
         <div className="container">
           <div className="row pb-12 text-center">
             <div className="mx-auto lg:col-7">
@@ -136,15 +164,15 @@ const Career = () => {
             })}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- End Benfits --> */}
 
-      <Testimonials data={testimonial} />
+      {/* <Testimonials data={testimonial} />
 
       <OpenPositions
         removeDrafts={removeDrafts}
         openPositions={openPositions}
-      />
+      /> */}
     </>
   );
 };

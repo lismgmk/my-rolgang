@@ -26,8 +26,10 @@ const Integration = () => {
       />
       <PageHeader
         title={integrationIndex.frontmatter.title}
-        breadcrumb={true}
-      />
+        // breadcrumb={true}
+        breadcrumb={false}
+        />
+            
       <section className="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem]">
         <div className="container relative z-20">
           <div className="row gy-4">
@@ -38,24 +40,17 @@ const Integration = () => {
                   data-aos="fade-up-sm"
                   className="md:col-6 lg:col-4"
                 >
-                  <div className="shadow-default overflow-hidden rounded-xl bg-white p-10">
+                  <div className="shadow-default overflow-hidden rounded-xl bg-white p-7">
                     <div className="mb-6 flex flex-wrap items-center justify-between gap-y-4">
                       <Image
-                        width={72}
-                        height={72}
+                        width={300}
+                        height={80}
                         className="rounded-xl"
                         src={draft.frontmatter.icon}
                         alt="icon"
                       />
-                      <a href="#" className="btn btn-outline-primary">
-                        <DynamicIcon
-                          className="mr-3 inline-block h-5 w-5 fill-current"
-                          icon="FaPlus"
-                        />
-                        Install
-                      </a>
                     </div>
-                    <h3 className="mb-4 font-primary text-xl font-semibold text-dark sm:text-2xl">
+                    <h3 className="mb-4 font-primary text-xl font-semibold text-dark sm:text-1.9xl">
                       <Link
                         href={`/integration/${slugify(
                           draft.frontmatter.title,
@@ -65,6 +60,13 @@ const Integration = () => {
                       </Link>
                     </h3>
                     <p>{draft.frontmatter.description}</p>
+                      <a href="#" className="btn btn-outline-primary">
+                        {/* <DynamicIcon
+                          className="mr-3 inline-block h-5 w-5 fill-current"
+                          icon="FaPlus"
+                        /> */}
+                        Получить консультацию
+                      </a>
                   </div>
                 </div>
               );
@@ -72,12 +74,12 @@ const Integration = () => {
           </div>
 
           {/* <!-- Start Bg Shape --> */}
-          <div className="pointer-events-none absolute left-[-4%] top-[30%] -z-10 select-none">
+          {/* <div className="pointer-events-none absolute left-[-4%] top-[30%] -z-10 select-none">
             <IntegrationShape1 className="text-tertiary" />
-          </div>
-          <div className="pointer-events-none absolute bottom-[30%] right-[-5%] -z-10 select-none">
+          </div> */}
+          {/* <div className="pointer-events-none absolute bottom-[30%] right-[-5%] -z-10 select-none">
             <IntegrationShape2 className="text-quaternary" />
-          </div>
+          </div> */}
           {/* <!-- End Bg Shape --> */}
         </div>
       </section>
