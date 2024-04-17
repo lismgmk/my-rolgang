@@ -30,7 +30,7 @@ const Footer = ({
       } relative z-20 bg-theme-dark after:absolute after:left-0 after:top-0 after:-z-10 after:h-[400px] after:w-full after:bg-[white] after:content-['']`}
     >
       {/* <!-- End Call To Action --> */}
-      {children}
+      {/* {children} */}
       <div
         data-aos="fade-in"
         data-aos-delay="50"
@@ -40,8 +40,8 @@ const Footer = ({
             : "z-30 pt-[80px] lg:pt-[130px] "
         }`}
       >
-        <div className="row items-center justify-center pb-10 lg:justify-between">
-          <div className="col-auto">
+        <div className="row items-center justify-center pb-40 lg:justify-between">
+          {/* <div className="col-auto">
             <a href="index.html">
               <Image
                 width={164}
@@ -50,9 +50,9 @@ const Footer = ({
                 alt="spydea"
               />
             </a>
-          </div>
+          </div> */}
           {/* <!-- End Site Logo --> */}
-          <div className="pt-10 lg:col-6 lg:pt-0">
+          {/*<div className="pt-10 lg:col-6 lg:pt-0">
             <form className="mx-auto flex w-full max-w-[600px] flex-col justify-between rounded-md bg-white p-[6px] sm:flex-row lg:ml-auto lg:mr-0 lg:max-w-full">
               <input
                 type="search"
@@ -63,7 +63,7 @@ const Footer = ({
                 Get A Quote
               </button>
             </form>
-          </div>
+      </div>*/}
           {/* <!-- End Newletter --> */}
         </div>
         {/* <!-- End Footer First Row --> */}

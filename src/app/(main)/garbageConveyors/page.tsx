@@ -3,18 +3,16 @@ import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { slugify } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import IntegrationShape1 from "@/shapes/integration-s-1";
-import IntegrationShape2 from "@/shapes/integration-s-2";
 import { techonoliges } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import config from "@/config/config.json";
 import React from "react";
 
-const Integration = () => {
-  const integrationIndex = getListPage(`integrations/_index.md`);
-  const { title, meta_title, description } = integrationIndex.frontmatter;
-  const technologies: techonoliges[] = getSinglePage("integrations");
+const garbageConveyors = () => {
+  const garbageConveyorses = getListPage(`garbageConveyors/_index.md`);
+  const { title, meta_title, description } = garbageConveyorses.frontmatter;
+  const technologies: techonoliges[] = getSinglePage("garbageConveyors");
   const removeDrafts = technologies.filter(
     (technology) => !technology.frontmatter.draft,
   );
@@ -28,11 +26,9 @@ const Integration = () => {
         description={description}
       />
       <PageHeader
-        title={integrationIndex.frontmatter.title}
-        // breadcrumb={true}
-        breadcrumb={false}
+        title={title} description={description}
         />
-            
+
       <section className="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem]">
         <div className="container relative z-20">
           <div className="row gy-4">
@@ -84,20 +80,10 @@ const Integration = () => {
               );
             })}
           </div>
-
-          {/* <!-- Start Bg Shape --> */}
-          {/* <div className="pointer-events-none absolute left-[-4%] top-[30%] -z-10 select-none">
-            <IntegrationShape1 className="text-tertiary" />
-          </div> */}
-          {/* <div className="pointer-events-none absolute bottom-[30%] right-[-5%] -z-10 select-none">
-            <IntegrationShape2 className="text-quaternary" />
-          </div> */}
-          {/* <!-- End Bg Shape --> */}
         </div>
       </section>
-      {/* <!-- End Integration Section --> */}
     </main>
   );
 };
 
-export default Integration;
+export default garbageConveyors;

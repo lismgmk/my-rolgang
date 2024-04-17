@@ -11,6 +11,8 @@ import { OpenPosition, Testimonial } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { slugify } from "@/lib/utils/textConverter";
+import config from "@/config/config.json";
+import React from "react";
 
 interface CareersPage {
   frontmatter: {
@@ -47,6 +49,7 @@ const Career = () => {
   const removeDrafts = allPositions.filter(
     (position) => !position.frontmatter.draft,
   );
+  const { navigation_buttons } = config;
 
   return (
     <>
@@ -89,13 +92,22 @@ const Career = () => {
                       </Link>
                     </h3>
                     <p>{draft.frontmatter.description}</p>
-                      <a href="#" className="btn btn-outline-primary">
-                        {/* <DynamicIcon
-                          className="mr-3 inline-block h-5 w-5 fill-current"
-                          icon="FaPlus"
-                        /> */}
-                        Получить консультацию
-                      </a>
+                    {navigation_buttons.map((button, i) => {
+                      return (
+                        <React.Fragment key={i}>
+                          {button.enable && (
+                            <Link
+                              href={button.link}
+                              className={`btn ${
+                                i === 0 ? "btn-outline-primary" : "btn-primary"
+                              } w-[200px] min-[340px]:w-[300px] lg:w-auto`}
+                            >
+                              {button.label}
+                            </Link>
+                          )}
+                        </React.Fragment>
+                      );
+                    })}
                   </div>
                 </div>
               );

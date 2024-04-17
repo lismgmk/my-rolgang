@@ -19,7 +19,7 @@
       "children": [
         {
           "name": "Роликовые конвейеры",
-          "url": "/elements"
+          "url": "/rollerconveyors"
         },
         {
           "name": "Ленточные конвейеры",
@@ -39,20 +39,13 @@
         },
         {
           "name": "Конвейеры для мусора",
-          "url": "/contact"
+          "url": "/garbageConveyors"
         },
         {
           "name": "Пластинчатые конвейеры",
-          "url": "/terms-conditions"
-        },
-        {
-          "name": "404 Page",
-          "url": "/404"
-        },
-        {
-          "name": "Sign up",
-          "url": "/sign-up"
+          "url": "/apronconveyors"
         }
+       
       ]
     }
   ],
