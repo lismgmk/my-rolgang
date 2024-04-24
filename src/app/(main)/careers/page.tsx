@@ -20,6 +20,7 @@ interface CareersPage {
     meta_title?: string;
     description?: string;
     image: string;
+    icon: string;
 
     benefits: {
       subtitle: string;
@@ -43,7 +44,7 @@ interface CareersPage {
 const Career = () => {
   const testimonial: Testimonial = getListPage("sections/testimonial.md");
   const careerIndex: CareersPage = getListPage("careers/_index.md");
-  const { title, meta_title, description, image, benefits, openPositions } =
+  const { title, meta_title, description, image, icon, benefits, openPositions } =
     careerIndex.frontmatter;
   const allPositions: OpenPosition[] = getSinglePage("careers");
   const removeDrafts = allPositions.filter(

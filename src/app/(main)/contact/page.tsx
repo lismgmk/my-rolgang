@@ -148,7 +148,7 @@ const Contact = async () => {
                       className="hover:underline hover:underline-offset-2"
                       href="tel:+1 234 567 8999"
                     >
-                      {support.text}
+                      {support.type}
                     </a>
                   </p>
                 </div>

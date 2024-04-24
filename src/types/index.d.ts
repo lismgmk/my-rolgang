@@ -181,6 +181,7 @@ export type OpenPosition = {
     location: string;
     type: string;
     draft: boolean;
+    icon: string;
   };
   slug: string;
   content: string;
