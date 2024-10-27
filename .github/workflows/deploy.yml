@@ -44,9 +44,9 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            echo "IMAGE_NAME: $IMAGE_NAME"
-            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.DOCKER_TOKEN }}
-            docker pull $IMAGE_NAME:latest
-            docker stop web_rolgang || true
-            docker rm web_rolgang || true
-            docker run -d --name web_rolgang -p 3001:3000 $IMAGE_NAME:latest
+                echo "IMAGE_NAME: ${{ env.IMAGE_NAME }}"
+                docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.DOCKER_TOKEN }}
+                docker pull ${{ env.IMAGE_NAME }}:latest
+                docker stop web_rolgang || true
+                docker rm web_rolgang || true
+                docker run -d --name web_rolgang -p 3001:3000 ${{ env.IMAGE_NAME }}:latest
