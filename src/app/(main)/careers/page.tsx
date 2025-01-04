@@ -1,17 +1,11 @@
-import DynamicIcon from "@/helpers/DynamicIcon";
+import config from "@/config/config.json";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
-import { markdownify } from "@/lib/utils/textConverter";
-import OpenPositions from "@/partials/OpenPositions";
+import { slugify } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import Testimonials from "@/partials/Testimonials";
-import AboutShape1 from "@/shapes/about-s-1";
-import AboutShape2 from "@/shapes/about-s-2";
 import { OpenPosition, Testimonial } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import { slugify } from "@/lib/utils/textConverter";
-import config from "@/config/config.json";
 import React from "react";
 
 interface CareersPage {

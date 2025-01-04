@@ -1,14 +1,11 @@
-import DynamicIcon from "@/helpers/DynamicIcon";
+import config from "@/config/config.json";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { slugify } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import IntegrationShape1 from "@/shapes/integration-s-1";
-import IntegrationShape2 from "@/shapes/integration-s-2";
 import { techonoliges } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import config from "@/config/config.json";
 import React from "react";
 
 const Integration = () => {
@@ -32,7 +29,7 @@ const Integration = () => {
         // breadcrumb={true}
         breadcrumb={false}
         />
-            
+
       <section className="section-md relative mt-[-28rem] overflow-hidden md:mt-[-32rem]">
         <div className="container relative z-20">
           <div className="row gy-4">

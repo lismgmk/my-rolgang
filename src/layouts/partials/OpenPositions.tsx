@@ -1,6 +1,4 @@
 import { markdownify, slugify } from "@/lib/utils/textConverter";
-import AboutShape1 from "@/shapes/about-s-1";
-import AboutShape4 from "@/shapes/about-s-4";
 import { OpenPosition } from "@/types";
 import Link from "next/link";
 import { BiCurrentLocation } from "react-icons/bi";
@@ -89,7 +87,6 @@ const OpenPositions = ({ openPositions, removeDrafts }: props) => {
             data-aos="fade-left-sm"
             className="pointer-events-none absolute bottom-[-70px] right-6 -z-10 hidden select-none lg:block"
           >
-            <AboutShape4 className="text-secondary" />
           </div>
         </div>
 
@@ -97,7 +94,6 @@ const OpenPositions = ({ openPositions, removeDrafts }: props) => {
           data-aos="fade-left-sm"
           className="pointer-events-none absolute left-[-7%] top-[30%] -z-10 hidden select-none lg:block"
         >
-          <AboutShape1 className="text-tertiary" />
         </div>
       </section>
     )

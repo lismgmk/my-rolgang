@@ -1,17 +1,11 @@
+import config from "@/config/config.json";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
-import { markdownify } from "@/lib/utils/textConverter";
-import Faq from "@/partials/Faq";
+import { slugify } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import PricingShape1 from "@/shapes/pricing-s-1";
-import PricingShape2 from "@/shapes/pricing-s-2";
-import { Button, faq } from "@/types";
-import Image from "next/image";
-import { FaChevronRight } from "react-icons/fa";
-import Link from "next/link";
 import { techonoliges } from "@/types";
-import { slugify } from "@/lib/utils/textConverter";
-import config from "@/config/config.json";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Pricing = () => {
