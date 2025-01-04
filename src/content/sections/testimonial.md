@@ -5,7 +5,7 @@ title: "Take an Look at Our Customers Stories"
 
 # Testimonials
 list:
-  - name: "Devon Lane"
+  - name: "Devon Lane222222222222"
     designation: "VP growth at Facebook"
     avatar: "/images/customers/1.jpg"
     company_logo: "/images/logo/1.png"

@@ -5,9 +5,6 @@ import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import TeamMemberShape1 from "@/shapes/team-member-s-1";
-import TeamMemberShape2 from "@/shapes/team-member-s-2";
-import { Post } from "@/types";
 
 export type blog = {
   frontmatter: {
@@ -27,7 +24,7 @@ export type blog = {
 const Post = () => {
   const { blog_folder } = config.settings;
   const postIndex = getListPage(`${blog_folder}/_index.md`);
-  const posts: Post[] = getSinglePage(`${blog_folder}`);
+  const posts = getSinglePage(`${blog_folder}`);
   const totalPages: number = Math.ceil(
     posts.length / config.settings.pagination,
   );
@@ -58,13 +55,8 @@ const Post = () => {
           />
         </div>
 
-        {/* <!-- Start Bg Shape --> */}
-        <div className="pointer-events-none absolute left-0 top-[40%] select-none">
-          <TeamMemberShape1 className="text-quaternary" />
-        </div>
-        <div className="pointer-events-none absolute bottom-[20%] right-[-6%] select-none">
-          <TeamMemberShape2 className="text-quinary" />
-        </div>
+        <div className="pointer-events-none absolute left-0 top-[40%] select-none"></div>
+        <div className="pointer-events-none absolute bottom-[20%] right-[-6%] select-none"></div>
       </section>
     </>
   );

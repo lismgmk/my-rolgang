@@ -1,15 +1,10 @@
 import BlogCard from "@/components/BlogCard";
 import Social from "@/components/Social";
-import Line from "@/components/line";
 import config from "@/config/config.json";
 import ImageFallback from "@/helpers/ImageFallback";
 import { getSinglePage } from "@/lib/contentParser";
 import { markdownify, slugify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
-import LoginShape1 from "@/shapes/login-s-1";
-import LoginShape2 from "@/shapes/login-s-2";
-import LoginShape3 from "@/shapes/login-s-3";
-import LoginShape4 from "@/shapes/login-s-4";
 import { Author, Post } from "@/types";
 
 // remove dynamicParams
@@ -46,7 +41,7 @@ const AuthorSingle = ({ params }: { params: { single: string } }) => {
         image={image}
       />
       <section className="section page-header author-single relative overflow-hidden after:z-10">
-        <Line className="line-bg absolute z-20" color="bg-line-yellow" />
+        {/* <Line className="line-bg absolute z-20" color="" /> */}
         <div className="container relative z-30">
           <div className="row">
             <div className="col-12 relative mx-auto">
@@ -96,25 +91,25 @@ const AuthorSingle = ({ params }: { params: { single: string } }) => {
                 data-aos="fade-up-sm"
                 className="pointer-events-none absolute -top-6 left-[-2%] -z-10 select-none lg:top-[-15%]"
               >
-                <LoginShape1 className="w-[150px] text-quaternary" />
+                {/* <LoginShape1 className="w-[150px] text-quaternary" /> */}
               </div>
               <div
                 data-aos="fade-up-sm"
                 className="pointer-events-none absolute -top-8 right-[-4%] -z-10 select-none lg:-top-12"
               >
-                <LoginShape2 className="w-[150px] text-quinary" />
+                {/* <LoginShape2 className="w-[150px] text-quinary" /> */}
               </div>
               <div
                 data-aos="fade-up-sm"
                 className="pointer-events-none absolute -bottom-8 left-[-4%] -z-10 select-none lg:bottom-[-22%]"
               >
-                <LoginShape3 className="w-[150px] text-tertiary" />
+                {/* <LoginShape3 className="w-[150px] text-tertiary" /> */}
               </div>
               <div
                 data-aos="fade-up-sm"
                 className="pointer-events-none absolute -bottom-8 right-[-3%] -z-10 select-none lg:bottom-[-32%]"
               >
-                <LoginShape4 className="w-[150px] text-secondary" />
+                {/* <LoginShape4 className="w-[150px] text-secondary" /> */}
               </div>
               {/* <!-- End background Lines --> */}
             </div>

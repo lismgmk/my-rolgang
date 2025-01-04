@@ -4,7 +4,7 @@ import Header from "@/partials/Header";
 import { Call_to_action } from "@/types";
 
 const Base = ({
-  backgroundColor = "bg-quaternary/20",
+  backgroundColor = "",
   children,
   callToAction,
   isNotFoundPage,

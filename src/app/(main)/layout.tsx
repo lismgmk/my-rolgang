@@ -8,7 +8,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
     "sections/call-to-action.md",
   );
   return (
-    <Base backgroundColor="bg-quaternary/20" callToAction={callToAction}>
+    <Base backgroundColor="bg-gray-200" callToAction={callToAction}>
       {children}
     </Base>
   );

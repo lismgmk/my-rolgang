@@ -1,9 +1,5 @@
 "use client";
 
-import LoginShape1 from "@/shapes/login-s-1";
-import LoginShape2 from "@/shapes/login-s-2";
-import LoginShape3 from "@/shapes/login-s-3";
-import LoginShape4 from "@/shapes/login-s-4";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
@@ -161,27 +157,27 @@ const Account = ({
               {/* <!-- Start Shape background --> */}
               <div
                 className="pointer-events-none absolute left-[-4%] top-[-4%] -z-10 select-none"
-                data-aos="fade-right-sm"
+
               >
-                <LoginShape1 className="text-quaternary" />
+                {/* <LoginShape1 className="text-quaternary" /> */}
               </div>
               <div
                 className="pointer-events-none absolute right-[-12%] top-[12%] -z-10 select-none"
                 data-aos="fade-left-sm"
               >
-                <LoginShape2 className="text-quinary" />
+                {/* <LoginShape2 className="text-quinary" /> */}
               </div>
               <div
                 className="pointer-events-none absolute bottom-[25%] left-[-10%] -z-10 select-none"
-                data-aos="fade-right-sm"
+
               >
-                <LoginShape3 className="text-tertiary" />
+                {/* <LoginShape3 className="text-tertiary" /> */}
               </div>
               <div
                 className="pointer-events-none absolute bottom-[-10%] right-[-9%] -z-10 select-none"
                 data-aos="fade-left-sm"
               >
-                <LoginShape4 className="text-secondary" />
+                {/* <LoginShape4 className="text-secondary" /> */}
               </div>
               {/* <!-- End Shape background --> */}
             </div>

@@ -5,65 +5,80 @@
       "url": "/"
     },
     {
-      "name": "Наши работы",
+      "name": "Готовые решения",
       "url": "/blog"
     },
     {
-      "name": "Контакты",
-      "url": "/contact"
-    },
-    {
-      "name": "Наша продукция",
+      "name": "Индивидуальные решения",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Роликовые конвейеры",
+          "name": "Гравитационные роликовые конвейеры",
           "url": "/rollerconveyors"
         },
         {
-          "name": "Ленточные конвейеры",
-          "url": "/integration"
+          "name": "Поворотные роликовые конвейеры",
+          "url": "/rotatingrollerconveyors"
         },
         {
-          "name": "Скребковые конвейеры",
-          "url": "careers"
+          "name": "Складной раздвижной конвейер",
+          "url": "/foldableextendableconveyor"
         },
         {
-          "name": "Модульные конвейеры",
-          "url": "/pricing"
+          "name": "Пильный стол-конвейер",
+          "url": "/sawtableconveyor"
         },
         {
-          "name": "Цепные конвейеры",
-          "url": "/authors"
+          "name": "Детали роликового конвейера",
+          "url": "/rollerconveyordetails"
         },
         {
-          "name": "Конвейеры для мусора",
-          "url": "/garbageConveyors"
+          "name": "Роликовые подшипники",
+          "url": "/rollerbearings"
         },
         {
-          "name": "Пластинчатые конвейеры",
-          "url": "/apronconveyors"
+          "name": "Стальные конвейерные ролики",
+          "url": "/steelconveyorrollers"
+        },
+        {
+          "name": "Пластиковые конвейерные ролики",
+          "url": "/plasticconveyorrollers"
+        },
+        {
+          "name": "Приводные роликовые конвейеры",
+          "url": "/drivenrollerconveyors"
         }
-       
       ]
+    },
+    {
+      "name": "О нас",
+      "url": "/"
+    },
+    {
+      "name": "Контакты",
+      "url": "/"
     }
   ],
+
   "footer": {
     "company": {
-      "name": "Company",
+      "name": "ООО 'АВ-Альянс'",
       "children": [
         {
-          "name": "About us",
-          "url": "/about"
+          "name": "УНП 191091299"
         },
         {
-          "name": "Contact us",
-          "url": "/contact"
+          "name": "Банковские реквизиты:"
         },
         {
-          "name": "Pricing",
-          "url": "/pricing"
+          "name": "BY05BLBB30120191091299001001"
+        },
+        {
+          "name": "ОАО  “Белинвестбанк»"
+        },
+        {
+          "name": "IBAN  BLBBBY2X"
         }
       ]
     },

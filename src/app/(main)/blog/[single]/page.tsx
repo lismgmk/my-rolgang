@@ -1,6 +1,5 @@
 import BlogCard from "@/components/BlogCard";
 import Disqus from "@/components/Disqus";
-import Line from "@/components/line";
 import config from "@/config/config.json";
 import MDXContent from "@/helpers/MDXContent";
 import { getSinglePage } from "@/lib/contentParser";
@@ -8,10 +7,6 @@ import dateFormat from "@/lib/utils/dateFormat";
 import similerItems from "@/lib/utils/similarItems";
 import { markdownify, slugify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
-import BlogShape2 from "@/shapes/blog-s-2";
-import HeaderShape1 from "@/shapes/header-s-1";
-import HeaderShape2 from "@/shapes/header-s-2";
-import TeamMemberShape2 from "@/shapes/team-member-s-2";
 import { Post } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -59,18 +54,18 @@ const Posts = ({ params }: { params: { single: string } }) => {
             )}
           </div>
         </div>
-        <Line className="line-bg absolute z-20" color="bg-line-yellow" />
+        {/* <Line className="line-bg absolute z-20" color="" /> */}
         <div
           className="pointer-events-none absolute left-0 top-[5%] z-30 hidden select-none lg:block"
           data-aos="fade-up-sm"
         >
-          <HeaderShape1 className="text-secondary" />
+          {/* <HeaderShape1 className="text-secondary" /> */}
         </div>
         <div
           className="pointer-events-none absolute right-0 top-[25%] z-30 hidden select-none lg:block"
           data-aos="fade-up-sm"
         >
-          <HeaderShape2 className="text-quinary" />
+          {/* <HeaderShape2 className="text-quinary" /> */}
         </div>
       </section>
 
@@ -124,10 +119,10 @@ const Posts = ({ params }: { params: { single: string } }) => {
         </div>
 
         <div className="pointer-events-none absolute left-0 top-[40%] select-none">
-          <BlogShape2 className="text-quaternary" />
+          {/* <BlogShape2 className="text-quaternary" /> */}
         </div>
         <div className="pointer-events-none absolute bottom-[20%] right-[-6%] select-none">
-          <TeamMemberShape2 className="text-quinary" />
+          {/* <TeamMemberShape2 className="text-quinary" /> */}
         </div>
       </section>
 
@@ -146,7 +141,7 @@ const Posts = ({ params }: { params: { single: string } }) => {
             ))}
           </div>
         </div>
-        <Line className="line-bg absolute z-20" color="bg-line-sky" />
+        {/* <Line className="line-bg absolute z-20" color="" /> */}
       </section>
     </>
   );

@@ -66,6 +66,7 @@ const Authors = () => {
                       </Link>
                     </h3>
                     <p>{draft.frontmatter.description}</p>
+                    {draft.content}
                     {navigation_buttons.map((button, i) => {
                       return (
                         <React.Fragment key={i}>

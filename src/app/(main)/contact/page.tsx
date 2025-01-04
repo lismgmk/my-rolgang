@@ -1,8 +1,6 @@
 import { getListPage } from "@/lib/contentParser";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import ContactShape1 from "@/shapes/contact-s-1";
-import ContactShape2 from "@/shapes/contact-s-2";
 import { RegularPage } from "@/types";
 
 const Contact = async () => {
@@ -41,19 +39,7 @@ const Contact = async () => {
                       required
                     />
                   </div>
-                  {/* <div className="sm:col-6">
-                    <label htmlFor="lname" className="form-label">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      className="form-input"
-                      placeholder="Your Last Name"
-                      id="lname"
-                      name="lname"
-                      required
-                    />
-                  </div> */}
+
                   <div className="col-12">
                     <label htmlFor="email" className="form-label">
                       Ваш e-mail
@@ -67,20 +53,7 @@ const Contact = async () => {
                       name="email"
                     />
                   </div>
-                  {/* <div className="col-12">
-                    <label htmlFor="purpose" className="form-label">
-                      Reason/Purpose
-                    </label>
-                    <select
-                      id="purpose"
-                      required
-                      className="w-full rounded-lg border-border px-5 py-4 text-sm"
-                    >
-                      <option value="0">General Inquiry</option>
-                      <option value="1">Support Request</option>
-                      <option value="2">Partnership Opportunity</option>
-                    </select>
-                  </div> */}
+
                   <div className="col-12">
                     <label htmlFor="message" className="form-label">
                       Ваш вопрос
@@ -97,7 +70,7 @@ const Contact = async () => {
                   </div>
                   <div className="col-12 text-right">
                     <button type="submit" className="btn btn-primary">
-                     Отправить 
+                      Отправить
                     </button>
                   </div>
                 </form>
@@ -109,13 +82,13 @@ const Contact = async () => {
               data-aos="fade-right-sm"
               className="pointer-events-none absolute bottom-[-8%] left-[5%] -z-10 hidden w-fit lg:block"
             >
-              <ContactShape1 className={"text-quaternary"} />
+              {/* <ContactShape1 className={"text-quaternary"} /> */}
             </div>
             <div
               data-aos="fade-left-sm"
               className="pointer-events-none absolute right-[4%] top-[35%] -z-10 hidden w-fit lg:block"
             >
-              <ContactShape2 className={"text-tertiary"} />
+              {/* <ContactShape2 className={"text-tertiary"} /> */}
             </div>
             {/* <!-- End Bg Shape --> */}
           </div>

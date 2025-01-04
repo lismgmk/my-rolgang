@@ -18,8 +18,8 @@ const Tablist = ({
               className={`group ${i === tabIndex && "active"}`}
               onClick={() => onTabChange(i)}
             >
-              <div className="h-full rounded-xl border border-border/50 bg-white px-4 py-4 text-left group-[.active]:border-white group-[.active]:shadow-md xl:px-8 xl:py-10">
-                <h3 className="text-sm font-semibold xl:mb-6 xl:text-2xl">
+              <div className="h-full rounded-xl border border-border/50 bg-white px-4 py-4 text-left group-[.active]:border-white group-[.active]:shadow-md xl:px-4 xl:py-5">
+                <h3 className="text-sm font-semibold xl:mb-3 xl:text-2xl">
                   {title}
                 </h3>
                 <p className="hidden xl:block">{description}</p>

@@ -51,14 +51,7 @@ const Faq = ({
           </div>
 
           <div className="line-bg absolute z-20">
-            <div className="container flex justify-between">
-              <span className="bg-line-sky inline-block h-full opacity-50 md:opacity-100"></span>
-              <span className="bg-line-sky inline-block h-full opacity-50 md:opacity-100"></span>
-              <span className="bg-line-sky inline-block h-full opacity-50 md:opacity-100"></span>
-              <span className="bg-line-sky inline-block h-full opacity-50 md:opacity-100"></span>
-              <span className="bg-line-sky inline-block h-full opacity-50 md:opacity-100"></span>
-              <span className="bg-line-sky inline-block h-full opacity-50 md:opacity-100"></span>
-            </div>
+            <div className="container flex justify-between"></div>
           </div>
         </section>
         {/* <!-- End Faq --> */}

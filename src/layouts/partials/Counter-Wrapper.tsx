@@ -1,8 +1,6 @@
 "use client";
 
 import Counter from "@/components/Counter";
-import FunFactShape1 from "@/shapes/fun-fact-s-1";
-import FunFactShape2 from "@/shapes/fun-fact-s-2";
 import { Projects } from "@/types";
 
 const CounterWrapper = ({
@@ -52,14 +50,14 @@ const CounterWrapper = ({
                 data-aos-delay="50"
                 className="pointer-events-none absolute bottom-[-55px] left-[-30px] -z-10 hidden select-none lg:block"
               >
-                <FunFactShape1 className="text-quinary" />
+                {/* <FunFactShape1 className="text-quinary" /> */}
               </div>
               <div
                 data-aos="fade-down-md"
                 data-aos-delay="50"
                 className="pointer-events-none absolute right-[-40px] top-[40px] -z-10 hidden select-none lg:block"
               >
-                <FunFactShape2 className="text-secondary" />
+                {/* <FunFactShape2 className="text-secondary" /> */}
               </div>
               {/* <!-- End Bg Shape --> */}
             </div>

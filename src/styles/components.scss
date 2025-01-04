@@ -91,16 +91,16 @@
 
 // Section Style
 .section {
-  @apply py-[60px] md:py-[100px];
+  @apply py-[30px] md:py-[50px];
 
   &-sm {
     @apply py-[60px];
   }
   &-md {
-    @apply py-[100px] md:py-[200px];
+    @apply py-[50px] md:py-[100px];
   }
   &-lg {
-    @apply py-[100px] lg:py-[200px] xl:py-[300px];
+    @apply py-[50px] lg:py-[100px] xl:py-[200px];
   }
 }
 
@@ -526,30 +526,6 @@
 
 // Feature Section
 .feature {
-  &.triangle-up::after {
-    @apply absolute left-0 top-0 h-full w-full bg-senary content-[""];
-
-    @media screen and (min-width: 768px) {
-      clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
-    }
-  }
-  &.triangle-up .line-bg {
-    @media screen and (min-width: 768px) {
-      clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
-    }
-  }
-  &.triangle-down::after {
-    @apply absolute left-0 top-0 h-full w-full bg-senary content-[""];
-
-    @media screen and (min-width: 768px) {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
-    }
-  }
-  &.triangle-down .line-bg {
-    @media screen and (min-width: 768px) {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
-    }
-  }
 }
 .feature-clip-path-1 {
   @apply z-10 before:absolute before:left-[13%] before:top-[0%] before:-z-10 before:h-[70%] before:w-[55%] before:bg-quaternary before:content-[''] before:lg:w-[50%];
@@ -708,13 +684,13 @@ footer.footer-alt {
 
 .widget {
   &-title {
-    @apply mb-4 font-primary text-[18px] font-semibold text-white md:mb-8;
+    @apply mb-4 font-primary text-[18px] font-semibold text-theme-dark md:mb-8;
   }
   &-content {
     @apply flex flex-col gap-3 md:gap-6;
 
     li {
-      @apply mx-auto w-fit text-white/80 sm:mx-0;
+      @apply mx-auto w-fit text-dark/80 sm:mx-0;
       a {
         @apply hover:underline hover:underline-offset-4;
       }

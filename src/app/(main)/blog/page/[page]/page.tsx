@@ -5,8 +5,6 @@ import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import TeamMemberShape1 from "@/shapes/team-member-s-1";
-import TeamMemberShape2 from "@/shapes/team-member-s-2";
 import { Post } from "@/types";
 const { blog_folder, pagination } = config.settings;
 
@@ -62,10 +60,10 @@ const Posts = ({ params }: { params: { page: number } }) => {
 
         {/* <!-- Start Bg Shape --> */}
         <div className="pointer-events-none absolute left-0 top-[40%] select-none">
-          <TeamMemberShape1 className="text-quaternary" />
+          {/* <TeamMemberShape1 className="text-quaternary" /> */}
         </div>
         <div className="pointer-events-none absolute bottom-[20%] right-[-6%] select-none">
-          <TeamMemberShape2 className="text-quinary" />
+          {/* <TeamMemberShape2 className="text-quinary" /> */}
         </div>
       </section>
     </>

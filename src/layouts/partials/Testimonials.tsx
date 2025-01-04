@@ -1,8 +1,6 @@
 "use client";
 
-import CustomerStoryShape1 from "@/shapes/customer-story-s-1";
-import CustomerStoryShape2 from "@/shapes/customer-story-s-2";
-import CustomerStoryShape3 from "@/shapes/customer-story-s-3";
+
 import { Testimonial } from "@/types";
 import Image from "next/image";
 
@@ -85,19 +83,19 @@ const Testimonials = ({ data }: { data: Testimonial }) => {
             data-aos="fade-right-sm"
             className="pointer-events-none absolute left-[-8%] top-[28%] -z-10 hidden select-none lg:block"
           >
-            <CustomerStoryShape1 className="text-quaternary" />
+            {/* <CustomerStoryShape1 className="text-quaternary" /> */}
           </div>
           <div
             data-aos="fade-up-md"
             className="pointer-events-none absolute right-[-4%] top-[-3%] -z-10 hidden select-none lg:block"
           >
-            <CustomerStoryShape2 className="text-dark" />
+            {/* <CustomerStoryShape2 className="text-dark" /> */}
           </div>
           <div
             data-aos="fade-down-sm"
             className="pointer-events-none absolute bottom-[12%] right-[-4%] -z-10 hidden select-none lg:block"
           >
-            <CustomerStoryShape3 className="text-secondary" />
+            {/* <CustomerStoryShape3 className="text-secondary" /> */}
           </div>
           {/* <!-- End Bg Shape --> */}
         </div>

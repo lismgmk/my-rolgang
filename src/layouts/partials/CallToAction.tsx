@@ -1,9 +1,7 @@
 "use client";
 
 import DynamicIcon from "@/helpers/DynamicIcon";
-import CTAShape1 from "@/shapes/cta-s-1";
-import CTAShape2 from "@/shapes/cta-s-2";
-import CTAShape3 from "@/shapes/cta-s-3";
+
 import { Call_to_action } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -91,16 +89,16 @@ const CallToAction = ({ callToAction }: { callToAction: Call_to_action }) => {
           data-aos="fade-left-sm"
           className="pointer-events-none absolute left-[-65px] top-0 -z-10 select-none sm:left-0"
         >
-          <CTAShape1 className="text-secondary" />
+          {/* <CTAShape1 className="text-secondary" /> */}
         </div>
         <div
           data-aos="fade-right-sm"
           className="pointer-events-none absolute bottom-[40px] right-[-90px] -z-10 select-none xl:right-[-60px]"
         >
-          <CTAShape2 className="text-secondary" />
+          {/* <CTAShape2 className="text-secondary" /> */}
         </div>
         <div className="pointer-events-none absolute bottom-[-120px] left-1/2 -z-10 -translate-x-1/2 select-none sm:bottom-[-90px]">
-          <CTAShape3 className="text-quaternary" />
+          {/* <CTAShape3 className="text-quaternary" /> */}
         </div>
       </div>
       {/* <!-- End CTA BG SHAPES --> */}

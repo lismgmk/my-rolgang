@@ -1,14 +1,11 @@
 "use client";
 
-import Line from "@/components/line";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { VscChevronDown } from "react-icons/vsc";
-import Announcement from "./Announcement";
 
 export interface ChildNavigationLink {
   name: string;
@@ -55,22 +52,11 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
 
   return (
     <>
-      <Line className="line-bg fixed left-0 top-1/2 z-10 flex h-screen w-full -translate-y-1/2 justify-between" />
-      <Announcement />
-      {/* <!-- End Top Header  --> */}
-
       <header ref={header} className={`header z-50 ${backgroundColor}`}>
         <nav className="navbar container relative z-30">
           <Link href="/" className="navbar-brand">
-            {/* <Image
-              width={158}
-              height={36}
-              src="/images/logo-dark.png"
-              alt="spydea"
-            /> */}
             ROLLGANG
           </Link>
-          {/* <!-- End logo --> */}
 
           <button
             className={`navbar-toggler group relative ml-auto lg:ml-4 ${isExpand ? "active" : ""}`}
@@ -89,7 +75,6 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
               </div>
             </div>
           </button>
-          {/* <!-- End Navbar Toggler --> */}
 
           <div className={`navbar-wrapper ${isExpand ? "active" : ""}`}>
             <ul className="navbar-nav">
@@ -156,15 +141,8 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
               </div>
             </div>
           </div>
-          {/* <!-- End Navbar Wrapper --> */}
         </nav>
-        {/* <!-- End Main Header  --> */}
-
-        {backgroundColor !== "bg-transparent" && (
-          <Line className="line-bg absolute z-20" color="bg-line-yellow" />
-        )}
       </header>
-      {/* <!-- End Header --> */}
     </>
   );
 };

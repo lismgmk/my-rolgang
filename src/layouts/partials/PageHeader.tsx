@@ -1,7 +1,6 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Line from "@/components/line";
 import { humanize, markdownify } from "@/lib/utils/textConverter";
-import HeaderShape2 from "@/shapes/header-s-2";
 import React from "react";
 
 const PageHeader = ({
@@ -29,9 +28,7 @@ const PageHeader = ({
                   {humanize(title)}
                 </h1>
               )}
-              {breadcrumb && (
-                <Breadcrumbs className="breadcrumb" />
-              )}
+              {breadcrumb && <Breadcrumbs className="breadcrumb" />}
               {description && (
                 <>
                   <hr
@@ -50,12 +47,7 @@ const PageHeader = ({
             </div>
           </div>
         </div>
-        {/* <!-- End Main Content --> */}
-        {children ?? (
-          <Line className="line-bg absolute z-20" color="bg-line-yellow" />
-        )}
 
-        {/* <!-- Start Shape background --> */}
         <div
           className="pointer-events-none absolute left-0 top-[5%] z-30 hidden select-none lg:block"
           data-aos="fade-up-sm"
@@ -81,9 +73,7 @@ const PageHeader = ({
         <div
           className="pointer-events-none absolute right-0 top-[25%] z-30 hidden select-none lg:block"
           data-aos="fade-up-sm"
-        >
-          <HeaderShape2 className="text-quinary" />
-        </div>
+        ></div>
       </section>
     </>
   );
