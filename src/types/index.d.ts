@@ -6,7 +6,7 @@ export type RegularPage = {
     meta_title: string;
     draft: boolean;
     layout: boolean;
-    supports: { type: string; email: string; mobile: string}[];
+    supports: { type: string; email: string; mobile: string }[];
     funfacts: {
       subtitle: string;
       title: string;
@@ -213,3 +213,49 @@ export type Process = {
     image: string;
   }[];
 };
+
+interface ReadySolutionItem {
+  title: string;
+  description: string;
+  image: string;
+}
+
+export interface IReadySolutions {
+  title: string;
+  subtitleLeft: string;
+  descriptionLeft: string;
+  subtitleRight: string;
+  descriptionRight: string;
+  titlePlastick: string;
+  listPlastick: ReadySolutionItem[];
+  titleSteal: string;
+  listSteal: ReadySolutionItem[];
+}
+
+export interface IPersonalSolutions {
+  title: string;
+  question: string;
+  answer: string;
+  content: string;
+  image: string;
+}
+
+interface IAboutAs {
+  title: string;
+  subtitle: string;
+  description: string;
+  values: Value[];
+}
+
+interface Value {
+  title: string;
+  description: string;
+  icon: string;
+}
+interface IGuarantee {
+  title: string;
+  subtitle: string;
+  description: string;
+  conclusion: string;
+  additionalText: string;
+}

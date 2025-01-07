@@ -20,15 +20,8 @@ const TabContainer = ({ description, title, list, subtitle }: Process) => {
       <div className="container relative z-30">
         <div className="row pb-12 text-center">
           <div className="mx-auto lg:col-7">
-            <span
-              className="mb-6 inline-block font-medium uppercase text-red-400"
-              data-aos="fade-up-sm"
-              data-aos-delay="50"
-            >
-              {subtitle}
-            </span>
             <h2
-              className="mb-6 font-semibold"
+              className="mb-6 font-semibold text-center"
               data-aos="fade-up-sm"
               data-aos-delay="100"
             >
@@ -50,9 +43,13 @@ const TabContainer = ({ description, title, list, subtitle }: Process) => {
               height={610}
               src={content.image}
               alt="feature image"
-              className="w-full rounded-xl"
+              className="w-full rounded-xl h-full"
             />
-            <Link href={""} className={`btn  btn-outline-primary mt-4`}>
+            <Link
+              id="target-header"
+              href={""}
+              className={`btn  btn-outline-primary mt-4`}
+            >
               Оформить заявку
             </Link>
           </div>

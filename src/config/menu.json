@@ -4,12 +4,9 @@
       "name": "Главная",
       "url": "/"
     },
+
     {
       "name": "Готовые решения",
-      "url": "/blog"
-    },
-    {
-      "name": "Индивидуальные решения",
       "url": "",
       "hasChildren": true,
       "children": [
@@ -52,12 +49,16 @@
       ]
     },
     {
+      "name": " Индивидуальные решения",
+      "url": "/#personal-solutions"
+    },
+    {
       "name": "О нас",
-      "url": "/"
+      "url": "/#about_as"
     },
     {
       "name": "Контакты",
-      "url": "/"
+      "url": "/#contact_form"
     }
   ],
 

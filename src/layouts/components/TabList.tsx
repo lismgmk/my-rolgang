@@ -22,7 +22,7 @@ const Tablist = ({
                 <h3 className="text-sm font-semibold xl:mb-3 xl:text-2xl">
                   {title}
                 </h3>
-                <p className="hidden xl:block">{description}</p>
+                <p className="hidden xl:block text-lg">{description}</p>
               </div>
             </button>
           </div>

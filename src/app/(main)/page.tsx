@@ -1,10 +1,18 @@
+import AboutAsContainer from "@/components/AboutAsContainer";
+import ContactForm from '@/components/ContactForm';
+import Guarantee from '@/components/Guarantee';
+import LogoSlider from '@/components/LogoSlider';
+import PersonalSolutionContainer from "@/components/PersonalSolutionContainer";
+import ReadySolutionContainer from "@/components/ReadySolutionContainer";
 import TabContainer from "@/components/TabContainer";
 // import config from "@/config/config.json";
 import config from "@/config/config.json";
+import DynamicIcon from "@/helpers/DynamicIcon";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
 import Image from "next/image";
+import Link from "next/link";
 const { blog_folder } = config.settings;
 
 const Home = () => {
@@ -30,7 +38,6 @@ const Home = () => {
                   mainBlock.frontmatter.general.title,
                 )}
               ></h1>
-
               <p
                 data-aos="fade-up-sm"
                 data-aos-delay="150"
@@ -46,7 +53,6 @@ const Home = () => {
                   mainBlock.frontmatter.general.subtitle,
                 )}
               ></h1>
-
               <p
                 data-aos="fade-up-sm"
                 data-aos-delay="150"
@@ -92,8 +98,15 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <TabContainer {...mainBlock.frontmatter.process} />
+      <ReadySolutionContainer {...mainBlock.frontmatter.readySolutions} />
+      <PersonalSolutionContainer
+        {...mainBlock.frontmatter.personal_solutions}
+      />
+      <LogoSlider />
+      <AboutAsContainer {...mainBlock.frontmatter.about_as} />
+      <Guarantee {...mainBlock.frontmatter.our_philosophy} />
+      <ContactForm/>
     </>
   );
 };
