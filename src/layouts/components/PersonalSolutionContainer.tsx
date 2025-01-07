@@ -27,7 +27,6 @@ const PersonalSolutionContainer = ({
             <h2 data-aos="fade-up-sm" className="mb-6 font-semibold">
               {title}
             </h2>
-
             <p
               data-aos="fade-up-sm"
               data-aos-delay="150"
@@ -35,7 +34,6 @@ const PersonalSolutionContainer = ({
             >
               {question}
             </p>
-
             <p
               data-aos="fade-up-sm"
               data-aos-delay="150"
@@ -43,15 +41,16 @@ const PersonalSolutionContainer = ({
             >
               {answer}
             </p>
-
             <p className="text-lg  leading-relaxed">{content}</p>
-            <Link
-              id="target-header"
-              href={""}
-              className={`btn  btn-outline-primary xs:py-4 mt-4`}
-            >
-              Оформить заявку
-            </Link>
+            <div className="my-8">
+              <Link
+                id="target-header"
+                href={""}
+                className={`btn  btn-outline-primary `}
+              >
+                Оформить заявку
+              </Link>
+            </div>
           </div>
 
           <div className="mx-auto max-w-[600px] xs:py-4 lg:col-6">
