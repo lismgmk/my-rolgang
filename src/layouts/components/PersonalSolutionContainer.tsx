@@ -45,7 +45,7 @@ const PersonalSolutionContainer = ({
             <div className="my-8">
               <Link
                 id="target-header"
-                href={""}
+                href={"/#contact_form"}
                 className={`btn  btn-outline-primary `}
               >
                 Оформить заявку

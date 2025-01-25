@@ -4,12 +4,12 @@
     "base_url": "https://nextplate.netlify.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo-dark.png",
-    "logo_darkmode": "/images/logo-darkmode.png",
+    "favicon": "/images/logo/logo.svg",
+    "logo": "/images/logo/logo.svg",
+    "logo_darkmode": "/images/logo/logo.svg",
     "logo_width": "158",
-    "logo_height": "36",
-    "logo_text": "Spydea"
+    "logo_height": "56",
+    "logo_text": "Av aliance"
   },
 
   "settings": {
@@ -41,14 +41,14 @@
     {
       "enable": true,
       "label": "Получить консультацию",
-      "link": "/contact"
+      "link": "/#contact_form"
     }
   ],
   "navigation_buttons_homepage": [
     {
       "enable": true,
       "label": "Узнать подробнее",
-      "link": "/contact"
+      "link": "/#contact_form"
     }
   ],
 

@@ -47,7 +47,7 @@ const TabContainer = ({ description, title, list, subtitle }: Process) => {
             />
             <Link
               id="target-header"
-              href={""}
+              href={"/#contact_form"}
               className={`btn  btn-outline-primary mt-4`}
             >
               Оформить заявку

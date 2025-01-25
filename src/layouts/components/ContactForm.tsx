@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import DownloadFormModal from "./DownloadFormModal";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -22,8 +23,10 @@ const ContactForm = () => {
 
   return (
     <section className="container mx-auto px-4 py-16">
-      <div id="contact_form" className="absolute -top-20"></div>
-      <h1 className="text-3xl font-semibold text-center mb-8">Контакты</h1>
+      <div id="contact_form"></div>
+      <h1 className="text-3xl font-semibold text-center mb-8">
+        Отправить заявку
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Первая колонка */}
         <div>
@@ -80,12 +83,7 @@ const ContactForm = () => {
         </div>
 
         <div className="flex flex-col space-y-4">
-          <button
-            onClick={handleDownloadForm}
-            className={`btn  btn-outline-primary xs:py-4 mt-4`}
-          >
-            Скачать форму
-          </button>
+          <DownloadFormModal />
           <button
             onClick={handleDownloadForm}
             className={`btn  btn-outline-primary xs:py-4 mt-4`}

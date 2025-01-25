@@ -5,11 +5,7 @@ import { useState } from "react";
 import TablistReadySolution from "./TabListReadySolution";
 
 const ReadySolutionContainer = ({
-  subtitleLeft,
   title,
-  descriptionLeft,
-  subtitleRight,
-  descriptionRight,
   titlePlastick,
   listPlastick,
   titleSteal,
@@ -23,10 +19,7 @@ const ReadySolutionContainer = ({
   const { navigation_buttons } = config;
 
   return (
-    <section
-     
-      className="section relative z-20 overflow-hidden"
-    >
+    <section className="section relative z-20 overflow-hidden">
       <div className="container">
         <h2
           className="mb-6 font-semibold text-center"
@@ -35,32 +28,6 @@ const ReadySolutionContainer = ({
         >
           {title}
         </h2>
-        <div className="grid w-full gap-4 sm:grid-cols-1 lg:grid-cols-2">
-          <div className="w-full  px-2 ">
-            <h3
-              className="text-lg text-left py-2"
-              data-aos="fade-up-sm"
-              data-aos-delay="150"
-            >
-              {subtitleLeft}
-            </h3>
-            <p className="text-lg" data-aos="fade-up-sm" data-aos-delay="150">
-              {descriptionLeft}
-            </p>
-          </div>
-          <div className="w-full px-2">
-            <h3
-              className="text-lg py-2"
-              data-aos="fade-up-sm"
-              data-aos-delay="150"
-            >
-              {subtitleRight}
-            </h3>
-            <p className="text-lg" data-aos="fade-up-sm" data-aos-delay="150">
-              {descriptionRight}
-            </p>
-          </div>
-        </div>
 
         <h2
           className="xl:text-2xl text-center text-lg lg:py-16 xs:py-8"
