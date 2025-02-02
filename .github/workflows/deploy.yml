@@ -29,7 +29,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t $IMAGE_NAME:${{ env.IMAGE_TAG }} --target production .
+          docker build -t $IMAGE_NAME:${{ env.IMAGE_TAG }} --target production \
+            --build-arg NEXT_PUBLIC_DEPLOY_HOST=https://av-al.by .
           docker tag $IMAGE_NAME:${{ env.IMAGE_TAG }} $IMAGE_NAME:latest
 
       - name: Push Docker image to GitHub Container Registry

@@ -9,6 +9,8 @@ import "react-phone-number-input/style.css";
 import DownloadFormModal from "./DownloadFormModal";
 import axios from "axios";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+
 const schema = yup.object().shape({
   name: yup.string().required("Имя обязательно для заполнения"),
   email: yup
@@ -70,7 +72,7 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/email/consultation",
+        `${API_URL}/api/email/consultation`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } },
       );
