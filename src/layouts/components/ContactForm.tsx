@@ -72,7 +72,8 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post(
-        `${API_URL}/api/email/consultation`,
+        // `${API_URL}/api/email/consultation`,
+        `https://av-al.by/api/email/consultation`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } },
       );
