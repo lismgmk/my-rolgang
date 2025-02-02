@@ -21,9 +21,13 @@ const schema = yup.object().shape({
     .mixed()
     .nullable()
     .test("fileSize", "Файл слишком большой", (value) => {
-      return !value || (value && value.size <= 5000000); // 5MB
+      if (value && value instanceof File) {
+        return value.size <= 5000000; // 5MB
+      }
+      return true;
     }),
 });
+
 
 const ContactForm = () => {
   const {
