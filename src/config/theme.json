@@ -22,14 +22,14 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Maven+Pro:wght@400;500;600;700",
+      "primary": "Nunito:wght@400;600;700",
       "primary_type": "sans-serif",
-      "secondary": "Merriweather:wght@400;700",
-      "secondary_type": "sans-serif"
+      "secondary": "Georgia:wght@400;700",
+      "secondary_type": "serif"
     },
     "font_size": {
-      "base": "18",
-      "scale": "1.23"
+      "base": "16",
+      "scale": "1.25"
     }
   }
 }

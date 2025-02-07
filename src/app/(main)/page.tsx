@@ -10,7 +10,6 @@ import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
 import Image from "next/image";
-const { blog_folder } = config.settings;
 
 const Home = () => {
   const mainBlock = getListPage("sections/first-title.md");
