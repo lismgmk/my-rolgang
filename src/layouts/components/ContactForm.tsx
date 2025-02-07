@@ -93,6 +93,7 @@ const ContactForm = () => {
 
   return (
     <section className="container mx-auto px-4 py-16">
+      <div id="contact_form"></div>
       <h1 className="text-3xl font-semibold text-center mb-8">
         Отправить заявку
       </h1>
