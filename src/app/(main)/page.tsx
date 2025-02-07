@@ -5,14 +5,11 @@ import LogoSlider from '@/components/LogoSlider';
 import PersonalSolutionContainer from "@/components/PersonalSolutionContainer";
 import ReadySolutionContainer from "@/components/ReadySolutionContainer";
 import TabContainer from "@/components/TabContainer";
-// import config from "@/config/config.json";
 import config from "@/config/config.json";
-import DynamicIcon from "@/helpers/DynamicIcon";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
 import Image from "next/image";
-import Link from "next/link";
 const { blog_folder } = config.settings;
 
 const Home = () => {
@@ -27,7 +24,6 @@ const Home = () => {
     <>
       <SeoMeta {...frontmatter} />
       <section className="section relative z-20 overflow-hidden">
-        {/* <section className="section banner relative overflow-hidden before:z-10 after:z-10"> */}
         <div className="container relative z-30">
           <div className="row items-center">
             <div className="lg:col-6">
