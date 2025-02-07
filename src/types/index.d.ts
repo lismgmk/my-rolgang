@@ -211,25 +211,20 @@ export type Process = {
     title: string;
     description: string;
     image: string;
+    url: string;
   }[];
 };
 
 interface ReadySolutionItem {
   title: string;
+  url: string;
   description: string;
   image: string;
 }
 
 export interface IReadySolutions {
   title: string;
-  subtitleLeft: string;
-  descriptionLeft: string;
-  subtitleRight: string;
-  descriptionRight: string;
-  titlePlastick: string;
-  listPlastick: ReadySolutionItem[];
-  titleSteal: string;
-  listSteal: ReadySolutionItem[];
+  list: ReadySolutionItem[];
 }
 
 export interface IPersonalSolutions {

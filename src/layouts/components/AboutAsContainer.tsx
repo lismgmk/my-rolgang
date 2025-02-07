@@ -15,8 +15,10 @@ const AboutAsContainer = ({
   };
 
   return (
-    <section className="section relative z-20 overflow-hidden">
-      <div id="about_as" className="absolute top-20"></div>
+    <section
+      id="about_as"
+      className="section relative z-20 "
+    >
       <div className="container relative z-30">
         <div className="row pb-12 ">
           <div className="mx-auto ">

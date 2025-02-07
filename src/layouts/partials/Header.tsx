@@ -1,6 +1,6 @@
 "use client";
 
-import Logo from '@/components/Logo';
+import Logo from "@/components/Logo";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import Link from "next/link";
@@ -55,8 +55,7 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
     <>
       <header ref={header} className={`header z-50 ${backgroundColor}`}>
         <nav className="navbar container relative z-30">
-          <Logo src={'/images/logo/logo.svg'} />
-
+          <Logo src={"/images/logo/logo.png"} />
 
           <button
             className={`navbar-toggler group relative ml-auto lg:ml-4 ${isExpand ? "active" : ""}`}
