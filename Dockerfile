@@ -28,7 +28,6 @@ FROM base AS production
 WORKDIR /app
 
 ENV NODE_ENV production
-ENV NEXT_PUBLIC_YANDEX_METRICA_ID "99846466"
 ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN addgroup --system --gid 1001 nodejs

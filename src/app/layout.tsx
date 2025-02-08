@@ -1,6 +1,7 @@
 import config from "@/config/config.json";
 import theme from "@/config/theme.json";
 import TwSizeIndicator from "@/helpers/TwSizeIndicator";
+import { YandexMetrica } from "@/app/YandexMetrica";
 import Providers from "@/partials/Providers";
 import "@/styles/main.scss";
 import "aos/dist/aos.css";
@@ -42,10 +43,11 @@ export default function RootLayout({
         />
       </head>
       <body suppressHydrationWarning={true}>
+        <YandexMetrica>
+          <Providers>{children}</Providers>
+        </YandexMetrica>
+
         <TwSizeIndicator />
-        <Providers>
-          {children}
-        </Providers>
       </body>
     </html>
   );
