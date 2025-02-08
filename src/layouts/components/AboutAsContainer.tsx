@@ -2,26 +2,24 @@
 import DynamicIcon from "@/helpers/DynamicIcon";
 import { IAboutAs } from "@/types";
 import { useState } from "react";
+import Image from "next/image";
 
 const AboutAsContainer = ({
   title,
   subtitle,
   description,
   values,
+  image,
 }: IAboutAs) => {
   const [tabIndex, setIndex] = useState(0);
   const onTabChange = (index: number) => {
     setIndex(index);
   };
-
   return (
-    <section
-      id="about_as"
-      className="section relative z-20 "
-    >
+    <section id="about_as" className="section relative z-20 ">
       <div className="container relative z-30">
-        <div className="row pb-12 ">
-          <div className="mx-auto ">
+        <div className="">
+          <div className="">
             <h2
               className="mb-6 text-center font-semibold "
               data-aos="fade-up-sm"
@@ -29,12 +27,33 @@ const AboutAsContainer = ({
             >
               {title}
             </h2>
-            <p className="text-lg" data-aos="fade-up-sm" data-aos-delay="150">
-              {subtitle}
-            </p>
-            <p className="text-lg" data-aos="fade-up-sm" data-aos-delay="150">
-              {description}
-            </p>
+            <div className="flex justify-between flex-wrap lg:flex-nowrap mb-14 gap-7">
+              <div className="flex flex-col justify-between h-full lg:py-15 lg:p-12 gap-7">
+                <h3
+                  className="text-lg lg:py-10"
+                  data-aos="fade-up-sm"
+                  data-aos-delay="150"
+                >
+                  {subtitle}
+                </h3>
+                <p
+                  className="text-lg"
+                  data-aos="fade-up-sm"
+                  data-aos-delay="150"
+                >
+                  {description}
+                </p>
+              </div>
+              <div className="mx-auto max-w-[600px] xs:py-4 lg:col-6">
+                <Image
+                  width={840}
+                  height={610}
+                  src={image}
+                  alt="feature image"
+                  className="w-full rounded-xl shadow-lg"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className="row gy-4" data-tab-group="">

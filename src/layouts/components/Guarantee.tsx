@@ -10,7 +10,7 @@ const Guarantee = ({
 }: IGuarantee) => {
   return (
     <section className="section relative z-20 overflow-hidden ">
-     
+
 
       <div className="container relative z-30">
         <div className="row">

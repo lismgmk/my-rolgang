@@ -240,6 +240,7 @@ interface IAboutAs {
   subtitle: string;
   description: string;
   values: Value[];
+  image: string;
 }
 
 interface Value {
