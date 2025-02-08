@@ -16,12 +16,12 @@ const TablistReadySolution = ({
       {list.map(({ description, title, image, url }, i) => (
         <div key={i} data-aos="fade-up-sm">
           <div
-            className={`cursor-pointer h-[300px] ${i === tabIndex && "active"}`}
+            className={`cursor-pointer h-[280px] ${i === tabIndex && "active"}`}
             onClick={() => onTabChange(i)}
           >
             <Link href={url}>
               <div className="h-full rounded-xl border border-border/50 bg-white px-4 py-4 text-left group-[.active]:border-white group-[.active]:shadow-md xl:px-4 xl:py-5">
-                <h3 className="py-1 bold text-xl font-semibold xl:mb-3">{title}</h3>
+                <h3 className=" bold text-xl font-semibold xl:mb-1">{title}</h3>
                 <div className="relative w-full h-[200px]">
                   <Image
                     fill

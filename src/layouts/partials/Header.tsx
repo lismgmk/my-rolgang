@@ -116,11 +116,7 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
                         onMouseEnter={handleMouseEnter} // Добавляем событие на наведение
                         onMouseLeave={handleMouseLeave} // Добавляем событие на уход курсора
                       >
-                        <Link
-                          onClick={toggleDropdown}
-                          href={item.url}
-                          className="nav-link"
-                        >
+                        <Link onClick={toggleDropdown} href={item.url}>
                           <label htmlFor="expand">
                             <span className="nav-link inline-flex items-center">
                               {item.name} <VscChevronDown />

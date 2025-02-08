@@ -25,7 +25,7 @@
   a:not(.btn),
   .nav-link,
   .nav-dropdown-link {
-    @apply text-[15px] xl:text-[18px];
+    @apply text-[15px] xl:text-[18px]  font-bold;
   }
 
   &.header-fixed-top {
