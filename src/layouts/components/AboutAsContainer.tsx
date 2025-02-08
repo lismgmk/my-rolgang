@@ -16,7 +16,8 @@ const AboutAsContainer = ({
     setIndex(index);
   };
   return (
-    <section id="about_as" className="section relative z-20 ">
+    <section  className="section relative z-20 ">
+      <div id="about_as" className="absolute -top-20"></div>
       <div className="container relative z-30">
         <div className="">
           <div className="">

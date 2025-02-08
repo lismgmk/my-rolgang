@@ -27,6 +27,11 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
   const pathname = usePathname();
   const header = useRef<HTMLElement>(null);
   const [isExpand, setExapnd] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen((prev) => !prev);
+  };
 
   useEffect(() => {
     function stickyHeader() {
@@ -46,11 +51,18 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
   const onExapndChange = () => {
     setExapnd(!isExpand);
   };
-
   useEffect(() => {
     setExapnd(false);
   }, [pathname]);
+   const handleMouseEnter = () => {
+     setIsOpen(true); // Открыть дропдаун при наведении
+   };
 
+   const handleMouseLeave = () => {
+     if (!isOpen) {
+       setIsOpen(false); // Закрыть дропдаун при уходе курсора
+     }
+   };
   return (
     <>
       <header ref={header} className={`header z-50 ${backgroundColor}`}>
@@ -81,30 +93,38 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
                 return (
                   <React.Fragment key={i}>
                     {item.hasChildren ? (
-                      <li className="nav-item nav-dropdown group">
-                        <label htmlFor="expand">
-                          <span className="nav-link inline-flex items-center">
-                            {item.name} <VscChevronDown />
-                          </span>
-                        </label>
-                        <input
-                          className="peer hidden"
-                          type="checkbox"
-                          id="expand"
-                        />
-                        <ul className="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100 peer-checked:max-lg:block">
-                          {item.children?.map((child, i) => {
-                            return (
-                              <li key={i} className="nav-dropdown-item">
-                                <Link
-                                  href={child.url}
-                                  className="nav-dropdown-link"
-                                >
-                                  {child.name}
-                                </Link>
-                              </li>
-                            );
-                          })}
+                      <li
+                        className="nav-item nav-dropdown group"
+                        onMouseEnter={handleMouseEnter} // Добавляем событие на наведение
+                        onMouseLeave={handleMouseLeave} // Добавляем событие на уход курсора
+                      >
+                        <Link
+                          onClick={toggleDropdown}
+                          href={item.url}
+                          className="nav-link"
+                        >
+                          <label htmlFor="expand">
+                            <span className="nav-link inline-flex items-center">
+                              {item.name} <VscChevronDown />
+                            </span>
+                          </label>
+                        </Link>
+
+                        <ul
+                          className={`nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100 ${
+                            isOpen ? "block" : "hidden"
+                          }`}
+                        >
+                          {item.children?.map((child, i) => (
+                            <li key={i} className="nav-dropdown-item">
+                              <Link
+                                href={child.url}
+                                className="nav-dropdown-link"
+                              >
+                                {child.name}
+                              </Link>
+                            </li>
+                          ))}
                         </ul>
                       </li>
                     ) : (

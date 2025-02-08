@@ -4,10 +4,7 @@ import { IReadySolutions } from "@/types";
 import { useState } from "react";
 import TablistReadySolution from "./TabListReadySolution";
 
-const ReadySolutionContainer = ({
-  title,
-  list,
-}: IReadySolutions) => {
+const ReadySolutionContainer = ({ title, list }: IReadySolutions) => {
   const [tabIndex, setIndex] = useState(0);
   const onTabChange = (index: number) => {
     console.log("+++");
@@ -16,7 +13,8 @@ const ReadySolutionContainer = ({
   const { navigation_buttons } = config;
 
   return (
-    <section className="section relative z-20 overflow-hidden">
+    <section className=" section relative z-20 overflow-hidden">
+      <div id="ready_solutions" className="absolute -top-20"></div>
       <div className="container">
         <h2
           className="mb-6 font-semibold text-center"
@@ -26,7 +24,6 @@ const ReadySolutionContainer = ({
           {title}
         </h2>
 
-
         <div className="flex flex-col sm:flex-row sm:justify-between">
           <TablistReadySolution
             tabIndex={tabIndex}
@@ -34,7 +31,6 @@ const ReadySolutionContainer = ({
             list={list}
           />
         </div>
-
       </div>
     </section>
   );

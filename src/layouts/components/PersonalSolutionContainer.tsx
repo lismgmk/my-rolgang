@@ -20,7 +20,7 @@ const PersonalSolutionContainer = ({
   console.log(title, question, answer, content, image);
   return (
     <section className="section relative z-20 py-16">
-      <div id="personal-solutions" className="absolute -top-5"></div>
+      <div id="personal-solutions" className="absolute -top-20"></div>
       <div className="container relative z-30">
         <div className="row">
           <div className="lg:col-6 flex flex-wrap content-between">
