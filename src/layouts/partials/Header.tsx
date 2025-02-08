@@ -54,15 +54,33 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
   useEffect(() => {
     setExapnd(false);
   }, [pathname]);
-   const handleMouseEnter = () => {
-     setIsOpen(true); // Открыть дропдаун при наведении
-   };
+  const handleMouseEnter = () => {
+    setIsOpen(true); // Открыть дропдаун при наведении
+  };
 
-   const handleMouseLeave = () => {
-     if (!isOpen) {
-       setIsOpen(false); // Закрыть дропдаун при уходе курсора
-     }
-   };
+  const handleMouseLeave = () => {
+    if (!isOpen) {
+      setIsOpen(false); // Закрыть дропдаун при уходе курсора
+    }
+  };
+
+  const trackGoal = (goal: string, params?: Record<string, any>) => {
+    if (typeof window !== "undefined" && "ym" in window) {
+      console.log("+++++window.ym", window.ym);
+      const ym = window.ym as unknown as (
+        yid: number,
+        method: string,
+        goal: string,
+        params?: Record<string, any>,
+      ) => void;
+
+      if (!ym) {
+        return;
+      }
+      ym(99846466, "reachGoal", goal, params);
+    }
+  };
+
   return (
     <>
       <header ref={header} className={`header z-50 ${backgroundColor}`}>
@@ -146,6 +164,10 @@ const Header = ({ backgroundColor }: { backgroundColor: string }) => {
                     <React.Fragment key={i}>
                       {button.enable && (
                         <Link
+                          onClick={() => {
+                            trackGoal("HEADER_BTN");
+                            return true;
+                          }}
                           href={button.link}
                           className={`btn ${
                             i === 0 ? "btn-outline-primary" : "btn-primary"

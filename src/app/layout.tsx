@@ -4,8 +4,8 @@ import TwSizeIndicator from "@/helpers/TwSizeIndicator";
 import Providers from "@/partials/Providers";
 import "@/styles/main.scss";
 import "aos/dist/aos.css";
-import { Suspense } from 'react';
-import { Metrika } from './metrika';
+import { Suspense } from "react";
+import { Metrika } from "../yandex/metrika";
 
 export default function RootLayout({
   children,
