@@ -1,6 +1,6 @@
 import { FC } from "react";
 import type { IconType } from "react-icons";
-import * as FaIcons6 from "react-icons/fa6";
+import * as FaIcons from "react-icons/fa";
 
 type IconMap = Record<string, IconType>;
 
@@ -10,7 +10,8 @@ interface IDynamicIcon {
 }
 
 const iconLibraries: { [key: string]: IconMap } = {
-  fa: FaIcons6,
+  // fa: AiOutlineCheck,
+  fa: FaIcons,
 };
 
 const DynamicIcon: FC<IDynamicIcon> = ({ icon, ...props }) => {

@@ -38,14 +38,7 @@ const AboutAsContainer = ({
                   className="w-full rounded-xl shadow-lg"
                 />
               </div>
-              <div className="flex flex-col justify-between h-full lg:py-15 lg:p-12 gap-7">
-                <h3
-                  className="text-2xl lg:py-10"
-                  data-aos="fade-up-sm"
-                  data-aos-delay="150"
-                >
-                  {subtitle}
-                </h3>
+              <div className="flex flex-col justify-between lg:py-15 lg:p-12 gap-7">
                 <p
                   className="text-lg"
                   data-aos="fade-up-sm"
@@ -53,6 +46,13 @@ const AboutAsContainer = ({
                 >
                   {description}
                 </p>
+                <h3
+                  className="text-[30px]  lg:py-10"
+                  data-aos="fade-up-sm"
+                  data-aos-delay="150"
+                >
+                  {subtitle}
+                </h3>
               </div>
             </div>
           </div>

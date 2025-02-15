@@ -10,8 +10,6 @@ const Guarantee = ({
 }: IGuarantee) => {
   return (
     <section className="section relative z-20 overflow-hidden ">
-
-
       <div className="container relative z-30">
         <div className="row">
           {/* Заголовок и подзаголовок */}
@@ -42,7 +40,7 @@ const Guarantee = ({
               {description}
             </p>
             <p
-              className="text-lg font-semibold mb-6"
+              className="font-extrabold text-lg mb-6"
               data-aos="fade-up-sm"
               data-aos-delay="200"
             >
