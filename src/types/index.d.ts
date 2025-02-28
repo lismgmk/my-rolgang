@@ -248,10 +248,3 @@ interface Value {
   description: string;
   icon: string;
 }
-interface IGuarantee {
-  title: string;
-  subtitle: string;
-  description: string;
-  conclusion: string;
-  additionalText: string;
-}
