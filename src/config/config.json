@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Spydea | Sass Theme",
-    "base_url": "https://nextplate.netlify.app",
+    "title": "av-al.by | конвейеры",
+    "base_url": "https://av-al.by/",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/logo/logo.svg",
